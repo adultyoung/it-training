@@ -1,5 +1,5 @@
 /**
- * @(#)Task_2.class   1.0  28/11/2017
+ * @(#)Task_2.class 1.0  28/11/2017
  */
 package Massive;
 
@@ -15,8 +15,8 @@ public class task_2 {
     public static void main(String[] args) {
         ArrayList i = new ArrayList();
         int count = 1;
-        for (; count<=100; count++) {
-            if((count % 13 == 0) || (count % 17 == 0)){
+        for (; count <= 100; count++) {
+            if ((count % 13 == 0) || (count % 17 == 0)) {
                 i.add(count);
             }
         }

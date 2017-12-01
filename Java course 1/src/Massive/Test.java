@@ -10,13 +10,13 @@ public class Test {
 
     public static void main(String[] args) {
         ArrayList<Integer> arr = new ArrayList<Integer>();
-        for (int i=0; i<5;i++) { //
-        int b = rand.nextInt((3))+1;
-        if (Arrays.asList(arr).contains(b)) {
-            i--;
-        } else {
-            arr.add(b);
-        }
+        for (int i = 0; i < 5; i++) {
+            int b = rand.nextInt((3)) + 1;
+            if (Arrays.asList(arr).contains(b)) {
+                i--;
+            } else {
+                arr.add(b);
+            }
         }
         System.out.println("Массив: " + arr);
     }

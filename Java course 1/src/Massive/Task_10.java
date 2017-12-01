@@ -1,5 +1,5 @@
 /**
- * @(#)Task_10.class   1.0  28/11/2017
+ * @(#)Task_10.class 1.0  28/11/2017
  */
 package Massive;
 
@@ -18,12 +18,12 @@ public class Task_10 {
 
     public static void main(String[] args) {
 
-        int a = rand.nextInt(9+1);
+        int a = rand.nextInt(9 + 1);
         int f = 1;
         // Вычисление факториала.
         for (int ind = 1; ind <= a; ind++) {
             f *= ind;
-    }
-        System.out.println(a+"! = "+f);
+        }
+        System.out.println(a + "! = " + f);
     }
 }

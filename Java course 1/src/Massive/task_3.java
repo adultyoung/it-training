@@ -1,5 +1,5 @@
 /**
- * @(#)Task_3.class   1.0  28/11/2017
+ * @(#)Task_3.class 1.0  28/11/2017
  */
 package Massive;
 
@@ -31,7 +31,7 @@ public class task_3 {
         int min = arr[0];
         int minInd = 0;
         //нахождение максимального и минимального значения массива и его индекса.
-        for (int i = 0; i != arr.length; i ++){
+        for (int i = 0; i != arr.length; i++) {
             if (arr[i] > max) {
                 max = arr[i];
                 maxInd = i;
@@ -46,16 +46,16 @@ public class task_3 {
     }
 
     /** Функция определяетс сумму чисел в массиве, расположенного в пределах максимума и минимума массива */
-    private static String getSumm (int min, int max, int[] arr, int summ) {
+    private static String getSumm(int min, int max, int[] arr, int summ) {
         if (min < max) {
-            min ++;
-            for (; min < max; min ++) {
+            min++;
+            for (; min < max; min++) {
                 summ += arr[min];
             }
             return "Сумма равна: " + summ;
         } else {
-            min --;
-            for (; min > max; min --) {
+            min--;
+            for (; min > max; min--) {
                 summ += arr[min];
             }
             return "Сумма равна: " + summ;

@@ -1,5 +1,5 @@
 /**
- * @(#)Task_9.class   1.0  28/11/2017
+ * @(#)Task_9.class 1.0  28/11/2017
  */
 package Massive;
 
@@ -16,8 +16,8 @@ public class task_9 {
     private static Random rand = new Random();
 
     public static void main(String[] args) {
-        int a =  rand.nextInt(100);
-        if ((a==2) || (a==3)) {
+        int a = rand.nextInt(100);
+        if ((a == 2) || (a == 3)) {
             System.out.println("Число " + a + " является простым числом");
         } else {
             if ((a % 2 == 0) || (a % 3 == 0)) {

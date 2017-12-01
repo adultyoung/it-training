@@ -1,10 +1,11 @@
 /**
-* @(#)Task_1.class   1.0  28/11/2017
+ * @(#)Task_1.class 1.0  28/11/2017
  */
 package Massive;
 
 import java.util.Arrays;
 import java.util.Collections;
+
 /**
  *  Класс делает reverse первоначального массива
  *
