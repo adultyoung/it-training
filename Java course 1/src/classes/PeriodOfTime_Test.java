@@ -7,7 +7,6 @@ public class PeriodOfTime_Test {
         int sec = 0;
         int min = 0;
         int hour = 0;
-        int allSec = 0;
         System.out.print("sec: ");
         Scanner sc = new Scanner(System.in);
         if (sc.hasNextInt()) {
@@ -21,10 +20,10 @@ public class PeriodOfTime_Test {
         if (sc.hasNextInt()) {
             hour = sc.nextInt();
         }
-        PeriodOfTime one = new PeriodOfTime(sec, min, hour);
-        one.print();
-        one.allSec(sec,min,hour);
-        PeriodOfTime two = new PeriodOfTime(allSec);
-        two.print();
+        PeriodOfTime sep = new PeriodOfTime(sec, min, hour);
+        sep.print();
+        sep.allSec(sec,min,hour);
+        PeriodOfTime all = new PeriodOfTime(PeriodOfTime.allSec);
+        all.print();
     }
 }
