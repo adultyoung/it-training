@@ -12,8 +12,8 @@ public class Bankomat_Test {
         one.add20();
         one.add50();
         one.add100();
-        boolean ifcash = one.Cash(summ20,summ50,summ100);
-        System.out.println(ifcash);
+        one.Cash(summ20,summ50,summ100);
+
     }
 
 }

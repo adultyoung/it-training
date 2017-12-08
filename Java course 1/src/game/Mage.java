@@ -1,9 +1,17 @@
 package game;
 
-public class Mage extends Hero implements Mortal {
+/**
+ *  Дочерний класс Hero
+ *  Переопределяет методы атаки врага и героя, присваивает герою имя и значение здоровья
+ *  Возвращает boolean значение о том, жив ли герой
+ *  @version 1.0 06 Dec 2017
+ *  @author Vlad Marchenko
+ */
+
+public class Mage extends Hero {
     @Override
     public void attackEnemy () {
-        Enemy one = new Enemy();
+        Enemy one = new Enemy(BattleGround.health);
         one.takeDamage(10);
         System.out.println("Mage " + name + " attacks the enemy");
         System.out.println("Damage: 10");
@@ -22,12 +30,5 @@ public class Mage extends Hero implements Mortal {
     }
     public void takeDamage (int damage) {
         health -= damage;
-    }
-
-    public boolean isAlive () {
-        if (health>0) {
-            return true;
-        }
-        return false;
     }
 }

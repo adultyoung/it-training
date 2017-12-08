@@ -1,6 +1,14 @@
 package game;
 
-public class Warrior extends Hero implements Mortal {
+/**
+ *  Дочерний класс Hero
+ *  Переопределяет методы атаки врага и героя, присваивает герою имя и значение здоровья
+ *  Возвращает boolean значение о том, жив ли герой
+ *  @version 1.0 06 Dec 2017
+ *  @author Vlad Marchenko
+ */
+
+public class Warrior extends Hero {
     Enemy one = new Enemy(BattleGround.health);
     @Override
     public void attackEnemy () {
@@ -26,10 +34,4 @@ public class Warrior extends Hero implements Mortal {
         health -= damage;
     }
 
-    public boolean isAlive () {
-        if (health>0) {
-            return true;
-        }
-        return false;
-    }
 }
