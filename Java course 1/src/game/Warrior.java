@@ -9,7 +9,7 @@ package game;
  */
 
 public class Warrior extends Hero {
-    Enemy one = new Enemy(BattleGround.health);
+    Enemy one = new Woman(BattleGround.health);
     @Override
     public void attackEnemy () {
         one.takeDamage(25);
@@ -19,9 +19,9 @@ public class Warrior extends Hero {
     }
     @Override
     public void attackHero () {
-        takeDamage(10);
+        takeDamage(50);
         System.out.println("The enemy attacks warrior" + name);
-        System.out.println("Damage: 10");
+        System.out.println("Damage: 50");
         healive = isAlive();
     }
 

@@ -1,10 +1,10 @@
 package game;
 
-public class Zombie extends Enemy {
-    Zombie() {
+public class Witch extends Enemy {
+    Witch() {
     }
 
-    Zombie(int health) {
+    Witch(int health) {
         this.setHealth(health);
     }
 

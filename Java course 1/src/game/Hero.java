@@ -8,13 +8,13 @@ package game;
  * @version 1.0 06 Dec 2017
  */
 
- abstract class Hero {
+ abstract class Hero implements Mortal {
     String name;
     int health;
     boolean enalive = true;
     boolean healive = true;
-
-     boolean isAlive () {
+    @Override
+    public boolean isAlive () {
         if (health > 0) {
             return true;
         }

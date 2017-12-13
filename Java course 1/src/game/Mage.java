@@ -11,7 +11,7 @@ package game;
 public class Mage extends Hero {
     @Override
     public void attackEnemy () {
-        Enemy one = new Enemy(BattleGround.health);
+        Enemy one = new Witch(BattleGround.health);
         one.takeDamage(10);
         System.out.println("Mage " + name + " attacks the enemy");
         System.out.println("Damage: 10");

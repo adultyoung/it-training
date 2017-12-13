@@ -8,26 +8,14 @@ package game;
  * @version 1.0 06 Dec 2017
  */
 
-public class Enemy implements Mortal {
+public abstract class Enemy implements Mortal {
     int health;
 
-    Enemy() {
-    }
+    public abstract void setHealth(int health);
 
-    Enemy(int health) {
-        this.setHealth(health);
-    }
+    public abstract void takeDamage(int damage);
 
-    public void setHealth(int health) {
-        if (health >= 0) {
-            this.health = health;
-        }
-    }
-
-    public void takeDamage(int damage) {
-        health -= damage;
-    }
-
+    @Override
     public boolean isAlive() {
         if (health > 0) {
             return true;

@@ -12,7 +12,7 @@ package game;
 public class Archer extends Hero {
     @Override
     public void attackEnemy () {
-        Enemy one = new Enemy(BattleGround.health);
+        Enemy one = new Zombie(BattleGround.health);
         one.takeDamage(15);
         System.out.println("Archer " + name + " attacks the enemy");
         System.out.println("Damage: 15");
