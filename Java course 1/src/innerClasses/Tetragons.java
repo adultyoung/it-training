@@ -1,6 +1,7 @@
 package innerClasses;
 
 public interface Tetragons {
-    boolean tetragonIn ();
-    boolean tetragonOut ();
+    boolean tetragonIn();
+
+    boolean tetragonOut();
 }

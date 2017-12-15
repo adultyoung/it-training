@@ -2,13 +2,6 @@ package classes;
 
 import java.util.Scanner;
 
-/**
- * Класс тестирует возможности класса PeriodOfTime
- *
- *  @version 1.0 04 Dec 2017
- *  @author Vlad Marchenko
- */
-
 public class PeriodOfTime_Test {
     public static void main(String[] args) {
         int sec = 0;

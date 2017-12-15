@@ -1,12 +1,5 @@
 package classes;
 
-/**
- * Класс создает конструкторы для вводимых значений секунд, часов, и дней и создает методы для подсчета общего количества секунд и вывода данных в консоль
- *
- *  @version 1.0 04 Dec 2017
- *  @author Vlad Marchenko
- */
-
 public class PeriodOfTime {
     private int sec;
     private int min;

@@ -2,48 +2,41 @@ package classes;
 
 import java.util.Scanner;
 
-/**
- * Класс получает значения количества имеющихся денежных купюр номиналом 20,50,100 и выводит, возможно ли вывести вводимую сумму средств данными номиналами
- *
- *  @version 1.0 04 Dec 2017
- *  @author Vlad Marchenko
- */
-
 public class Bankomat {
     public static int summ20 = 0;
     public static int summ50 = 0;
     public static int summ100 = 0;
 
     void add20 () {
-        System.out.print("Кол. 20: ");
+        System.out.print("summ20: ");
         Scanner sc = new Scanner(System.in);
             summ20 = sc.nextInt();
     }
 
     void add50 () {
-        System.out.print("Кол. 50: ");
+        System.out.print("summ50: ");
         Scanner sc = new Scanner(System.in);
         summ50 = sc.nextInt();
     }
 
     void add100() {
-        System.out.print("Кол. 100: ");
+        System.out.print("sum100: ");
         Scanner sc = new Scanner(System.in);
         summ100 = sc.nextInt();
     }
 
     public boolean Cash (int summ20, int summ50, int summ100) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Сумма на снятие: ");
+        System.out.print("cash: ");
         int cash = sc.nextInt();
         while (cash % 10 != 0) {
             System.out.println("Вы ввели сумму, не кратную 10");
-            System.out.print("Сумма на снятие: ");
+            System.out.print("cash: ");
             cash = sc.nextInt();
 
         }
-        //Обьявление купюр, входящих в сумму для снятия
-        int numb20;
+
+        int numb20 = 0;
         int numb50 = 0;
         int numb100 = 0;
         numb20 = (cash/20);
@@ -61,7 +54,7 @@ public class Bankomat {
             System.out.println("20 - " + numb20 + "; 50 - " + numb50 + "; 100 - " + numb100 + ".");
             return true;
         } else
-            System.out.println("Невозможно выдать такую сумму денег");
+            System.out.println("meeeeeh");
         return false;
 
     }
