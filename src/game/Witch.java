@@ -1,8 +1,6 @@
 package game;
 
-
 public class Witch extends Enemy {
-
     Witch() {
     }
 
@@ -20,5 +18,5 @@ public class Witch extends Enemy {
     @Override
     public void takeDamage(int damage) {
         health -= damage;
-        }
     }
+}

@@ -42,29 +42,29 @@ public class task_4 {
         int day = getDay();
         int month = getMonth();
         int year = getYear();
-        boolean leap = year%4==0 && year%100!=0 || year%400==0;
-        if(day>=1&&day<=31&&month>=1&&month<=12&&year>=1){
-            switch(day){
+        boolean leap = year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
+        if (day >= 1 && day <= 31 && month >= 1 && month <= 12 && year >= 1) {
+            switch (day) {
                 case 29:
-                    if(month==2&&!leap) {
+                    if (month == 2 && !leap) {
                         return "Это не реальная дата";
-                    }else{
+                    } else {
                         return "Это реальная дата";
                     }
                 case 30:
-                    if(month==2) {
+                    if (month == 2) {
                         return "Это не реальная дата";
-                    }else{
+                    } else {
                         return "Это реальная дата";
                     }
                 case 31:
-                    if(month==4||month==6||month==9||month==11||month==2){
+                    if (month == 4 || month == 6 || month == 9 || month == 11 || month == 2) {
                         return "Это не реальная дата";
                     }
                 default:
                     return "Это реальная дата";
             }
-        }else {
+        } else {
             return "Это не реальная дата";
         }
     }

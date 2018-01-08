@@ -1,7 +1,7 @@
 package generics;
-/*
-* Класс создает дженерики, конструкторы с дженериками, используемые в классе Results.
- */
+
+import java.math.BigDecimal;
+
 public class InOutput<I,D extends Number> {
     I i1;
     I i2;

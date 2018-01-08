@@ -6,15 +6,10 @@ import java.util.Scanner;
 import static generics.Results.Math.getMath;
 import static generics.Results.Math.getMathBigDec;
 
-/*
-* Класс, использую дженерики из InOutput, присвает им тип Integer, Double и производит их математические вычисления.
- */
-
 public class Results {
     public static void main(String[] args) {
         Number i1;
         Number i2;
-        // Ввод значений
         System.out.print("Введите любое число: ");
         Scanner sc = new Scanner(System.in);
         if(sc.hasNextInt()) {
@@ -28,13 +23,12 @@ public class Results {
         } else {
             i2 = sc.nextDouble();
         }
-        //Создание обьекта и вывод значений мат. вычислений
         InOutput <Number,Number> intInt = new InOutput<>(i1,i2);
         System.out.println("i1 + i2 = " + getMath(i1,i2));
         System.out.println("BigDecimal: i1 + i2 = " + getMathBigDec(i1,i2));
     }
     static class Math {
-        //Сетоды для матемаческих вычислений.
+
         static Number getMath(Number i1, Number i2) {
             if ((i1 instanceof Double) || (i2 instanceof Double)) {
                 return i1.doubleValue() + i2.doubleValue();

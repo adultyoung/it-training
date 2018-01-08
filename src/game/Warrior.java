@@ -1,7 +1,5 @@
 package game;
 
-import java.util.Random;
-
 /**
  *  Дочерний класс Hero
  *  Переопределяет методы атаки врага и героя, присваивает герою имя и значение здоровья
@@ -10,21 +8,21 @@ import java.util.Random;
  *  @author Vlad Marchenko
  */
 
-
 public class Warrior extends Hero {
-    private static Random rand = new Random();
-    Enemy one = new Witch(100);
+    Enemy one = new Woman(BattleGround.health);
     @Override
     public void attackEnemy () {
+        one.takeDamage(25);
         System.out.println("Warrior " + name + " attacks the enemy");
         System.out.println("Damage: 25");
-        one.takeDamage(25);
         enalive = one.isAlive();
     }
     @Override
     public void attackHero () {
         takeDamage(50);
-
+        System.out.println("The enemy attacks warrior" + name);
+        System.out.println("Damage: 50");
+        healive = isAlive();
     }
 
     Warrior (String name, int health) {
@@ -34,14 +32,6 @@ public class Warrior extends Hero {
 
     public void takeDamage (int damage) {
         health -= damage;
-        System.out.println("The enemy attacks warrior " + name);
-        System.out.println("Damage: 50");
-        if (rand.nextInt(100) < 50) {
-            health -= damage;
-            System.out.println("The enemy attacks warrior again");
-            System.out.println("Damage: 50");
-        }
-        healive = isAlive();
-
     }
+
 }
